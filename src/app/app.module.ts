@@ -6,6 +6,8 @@ import { ContactServiceService } from './contact-service.service';
 import { AppComponent } from './app.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactOverviewComponent } from './contact-overview/contact-overview.component';
+import { ContactEditComponent } from './contact-edit/contact-edit.component';
 
 const routes: Routes = [
   { path: '', component: ContactListComponent },
@@ -16,7 +18,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ContactListComponent,
-    ContactComponent
+    ContactComponent,
+    ContactOverviewComponent,
+    ContactEditComponent
   ],
   imports: [
     BrowserModule,
