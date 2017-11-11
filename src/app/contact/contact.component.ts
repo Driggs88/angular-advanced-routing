@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ContactComponent implements OnInit {
   contactId: number;
 
-  constructor (){ }
+  constructor (){}
 
   ngOnInit() {}
 }
