@@ -8,19 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ContactComponent implements OnInit {
   contactId: number;
-  optionalParameter: string;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor (){ }
 
-  ngOnInit() {
-    this.route.params
-      .subscribe((params) => {
-        this.contactId = +params['id'];
-    });
-
-    this.route.queryParams
-      .subscribe((queryParams) => {
-        this.optionalParameter = queryParams['foo'];
-    });
-  }
+  ngOnInit() {}
 }
